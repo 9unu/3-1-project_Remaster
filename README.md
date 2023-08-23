@@ -26,9 +26,10 @@
 - 문제점 발견: "특성의 고유값마다 fat의 값(정상, 과체중, 비만) 비율이 비슷한 컬럼이 대다수"
 
 ### 3. feature_filterling.ipynb
-- 변별력이 낮은 특성을 걸러내는 함수 작성
+: 변별력이 낮은 특성 걸러내는 함수 작성
+
    - mse_col_filter(ratio_data, threshold): 각 특성의 고유값별 fat 값 비율을 구하고, 그 비율의 평균 계산
-   - 평균 비율과 개별 비율 간의 mse 값을 계산하여 filtering (임계값: 0.001)
+   - 평균 비율과 개별 비율 간의 mse 값을 계산하여 filterling (임계값: 0.001)
    - 연속형 컬럼과 명목형 컬럼을 구분하고 pickle로 최종 특성 리스트 저장
 
 ### 4. modeling.ipynb
